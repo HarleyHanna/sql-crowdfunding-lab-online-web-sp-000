@@ -47,7 +47,7 @@ SELECT projects.category, SUM(pledges.amount)
 FROM projects
 INNER JOIN pledges
 ON projects.id = pledges.project_id
-GROUP BY projects.category DESC
+GROUP BY projects.category
 LIMIT 1;"
 end
 
